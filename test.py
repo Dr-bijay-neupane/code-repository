@@ -26,3 +26,6 @@ fruits=["orange","apple"]
 
 for i in fruits:
     print(i)
+
+
+Author - Bijay Neupane
