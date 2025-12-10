@@ -32,3 +32,9 @@ for i in fruits:
 
     
 main()
+
+class computer:
+    def config():
+        print("16gb ram,1tb storage")
+
+computer.config()
