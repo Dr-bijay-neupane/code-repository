@@ -1,5 +1,3 @@
-def main():
-    def calculator(choice):
         a=int(input("ENTER ANY VALUE"))
         b=int(input("ENTER ANY VALUE"))
         match choice:
@@ -16,5 +14,3 @@ def main():
     a=calculator(c)
     print(a)
     
-
-print(__name__)

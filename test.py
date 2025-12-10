@@ -1,4 +1,7 @@
+from coding import *
+
 print("hello world")
+
 
 
 
@@ -27,6 +30,5 @@ fruits=["orange","apple"]
 for i in fruits:
     print(i)
 
-
-Author - Bijay Neupane
-Roll - ACM081BCT023
+    
+main()
