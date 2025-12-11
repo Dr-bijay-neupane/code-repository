@@ -1,6 +1,5 @@
 from coding import *
-
-print("hello world")
+"""print("hello world")
 
 
 
@@ -17,7 +16,6 @@ def sum(a,b):
 x=int(input("Enter numbers"))
 n=sum(x,3)
 print("the sum of x and y is=",n)
-
 
 i=0
 while(i<=10):
@@ -37,4 +35,5 @@ class computer:
     def config():
         print("16gb ram,1tb storage")
 comp1=computer()
-computer.config()
+computer.config()"""
+print("hi")

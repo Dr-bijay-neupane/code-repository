@@ -15,6 +15,3 @@ def main():
     c=int(input("Enter value l. ADDING  2.SUBTRACTION 3.MULTIPLICATIN 4.POWER 5.DIVISION"))
     a=calculator(c)
     print(a)
-    
-
-print(__name__)
