@@ -1,5 +1,5 @@
 from coding import *
-"""print("hello world")
+print("hello world")
 
 
 
@@ -35,5 +35,5 @@ class computer:
     def config():
         print("16gb ram,1tb storage")
 comp1=computer()
-computer.config()"""
+computer.config()
 print("hi")
