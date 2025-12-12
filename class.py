@@ -1,9 +1,20 @@
 class computer:
-    college="Gandaki college of engineering and science"
+     
+    college="ACEM"
     def __init__(self):
         self.name="bijay"
         self.age=21
+        self.lap=self.laptop()
 
+    class laptop:
+
+        def __init__(self):
+            self.brand="asus vivebook"
+            self.cpu="12000H i5"
+            self.ram=16
+
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
 ob1=computer()
 ob2=computer()
 ob1.name="ramu"
@@ -14,7 +25,8 @@ print(ob1.college)
 print(ob2.name)
 print(ob2.age)
 print(ob2.college)
-    
 
 
-  
+
+lp1=computer.laptop()
+lp1.show()
