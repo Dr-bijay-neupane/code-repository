@@ -80,3 +80,113 @@ if s1>s2:
 
 else:
     print("s2 wins")
+
+# abstract class
+
+from abc import ABC , abstractmethod
+
+class computer:
+    @abstractmethod
+    def process(self):
+        pass
+
+c=computer()
+c.process()
+
+# iterator
+
+nums=[7,53,4,3]
+
+
+for i in nums:
+    print(i)
+
+#or
+
+it = iter(nums)
+
+print(it.__next__)
+print(it.__next__)
+
+# or 
+
+
+print(next(it))
+
+
+class topten:
+
+    def __init__(self):
+        self.num = 1
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.num <=10:
+            val = self.num
+            self.num += 1
+        
+        else:
+            raise StopIteration
+
+        return val
+    
+values=topten()
+
+for i in values:
+    print(i)
+
+# exception errors
+
+a=5
+b=4
+
+try:
+    print("resource open")
+    print(a/b)
+
+    k=int(input("ENTER VLAUE"))
+    print(k)
+  
+except ZeroDivisionError as e :         #exception or ZeroDivisioinError
+    print("YOU ARE TRYING TO DIVIDE A NUMBER BY ZERO",e)
+
+except ValueError as e :
+    print("INVALID VALUE")
+
+except Exception as e :
+    print("ERROR!!")
+    
+finally:
+    print("resource closed")
+
+    #multi threading 
+
+from time import sleep
+from threading import *
+
+class hello(Thread):  #thread does parrel work
+    def run(self):
+        for i in range(5):
+            print("HELLO")
+            sleep(1)
+
+class hi(Thread):
+    def run(self):
+        for i in range(5):
+            print("HI")
+            sleep(1) #delay by 1 second
+
+a=hello()
+b=hi()
+
+a.start()
+sleep(0.2)
+b.start()   #start calls run method/function internally tho run is the name of method
+
+
+a.join()
+b.join()   #doesnt let until a and b finished
+
+print("bye")
