@@ -43,3 +43,18 @@ ob1.feature3()
 
 ob2=C()
 ob2.feature4()
+
+
+# over-riding
+
+class A:
+    def show(self):
+        print("OPRATING FROM A")
+    
+class B(A):
+
+    def show(self):
+        print("OPERATING FROM B")
+
+a=B()
+a.show()
