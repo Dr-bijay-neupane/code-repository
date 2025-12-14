@@ -30,3 +30,11 @@ print(ob2.college)
 
 lp1=computer.laptop()
 lp1.show()
+
+
+class computer:
+    def config():
+        print("16gb ram,1tb storage")
+comp1=computer()
+computer.config()
+print("hi")

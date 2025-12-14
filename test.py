@@ -1,8 +1,4 @@
-
 print("hello world")
-
-
-
 
 name=input("Enter your name")
 print(name)
@@ -22,17 +18,7 @@ while(i<=10):
     print(i)
     i+=1
 
-
 fruits=["orange","apple"]
 
 for i in fruits:
     print(i)
-
-
-
-class computer:
-    def config():
-        print("16gb ram,1tb storage")
-comp1=computer()
-computer.config()
-print("hi")
