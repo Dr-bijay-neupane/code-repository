@@ -1,4 +1,4 @@
-from coding import *
+
 print("hello world")
 
 
@@ -28,8 +28,7 @@ fruits=["orange","apple"]
 for i in fruits:
     print(i)
 
-    
-main()
+
 
 class computer:
     def config():
