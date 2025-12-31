@@ -22,6 +22,6 @@ fruits=["orange","apple"]
 
 for i in fruits:
     print(i)
- a=6
+a=6
 b=5
 print(a+b)
