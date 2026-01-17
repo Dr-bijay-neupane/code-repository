@@ -1,10 +1,12 @@
-import pygame
+import test12
 import sys
 
-pygame.init()
-w,h=600,500
-screen = pygame.display.set_mode((w, h))
+test12.init()
 
+w = 600
+h = 500
+
+screen = test12.display.set_mode((w, h))
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -25,21 +27,18 @@ def DDA(x1, y1, x2, y2):
     y = y1
 
     for i in range(steps + 1):
-        
+        screen.set_at((round(x), round(y)), BLACK)
         x = x + xinc
         y = y + yinc
-        screen.set_at((round(x), round(y)), BLACK)
-
 
 while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
+    for event in test12.event.get():
+        if event.type == test12.QUIT:
+            test12.quit()
             sys.exit()
 
     screen.fill(WHITE)
 
+    DDA(300, 150, 400, 250)
 
-DDA(300, 150, 400, 250)
-
-    
+    test12.display.update()
